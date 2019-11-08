@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    tools:context=".ExpenseEntryFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        ></TextView>
+<Spinner
+    android:id="@+id/expenseTypeSpn"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"></Spinner>
+
+    <EditText
+        android:id="@+id/amountEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:inputType="numberDecimal"
+        android:hint="Enter expense amount"></EditText>
+    <EditText
+        android:id="@+id/dateEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="date"
+        android:focusable="true"
+        android:drawableRight="@drawable/ic_date"
+        android:hint="Enter expense date"></EditText>
+    <EditText
+        android:id="@+id/timeEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="time"
+        android:focusable="true"
+        android:drawableRight="@drawable/ic_time"
+        android:hint="Enter expense time(optional)"></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/documentIv"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="0.4"
+            android:src="@drawable/ic_linked_camera"></ImageView>
+        <Button
+            android:id="@+id/insertDoc"
+            android:layout_marginTop="40dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.6"
+            android:textColor="#F5F7F8"
+            android:background="#45AA93"
+            android:text="Add document(if any)"
+            android:textAllCaps="false"></Button>
+    </LinearLayout>
+    <Button
+        android:id="@+id/insertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#F5F7F8"
+        android:background="#45AA93"
+         android:text="Add expense"
+        android:textAllCaps="false"></Button>
+
+</LinearLayout>

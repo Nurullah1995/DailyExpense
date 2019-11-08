@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashboardFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+       app:cardCornerRadius="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            ></TextView>
+        <Spinner
+            android:id="@+id/expenseTypeSpn"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"></Spinner>
+    </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/fromDateTv"
+                android:gravity="right"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:text="From Date"
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/ic_date"
+                android:layout_height="30dp"></TextView>
+            <TextView
+                android:id="@+id/toDateTv"
+                android:gravity="right"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:text="To Date"
+                android:drawableRight="@drawable/ic_date"
+                android:layout_height="30dp"></TextView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            app:cardCornerRadius="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Expense"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textAlignment="center"
+               ></TextView>
+            <TextView
+                android:id="@+id/summaryTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="BDT 0.00"
+                android:textStyle="bold"
+                android:textAlignment="center"
+               ></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
